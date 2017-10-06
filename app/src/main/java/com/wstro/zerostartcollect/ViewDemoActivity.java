@@ -31,5 +31,18 @@ public class ViewDemoActivity extends AppCompatActivity {
         });
 
 
+        //shiftTest();
+
+
+
+
+    }
+
+    private void shiftTest(){
+        int a = 0x1;
+
+        int b = a << 2;
+
+        LogUtils.d(b+"");
     }
 }

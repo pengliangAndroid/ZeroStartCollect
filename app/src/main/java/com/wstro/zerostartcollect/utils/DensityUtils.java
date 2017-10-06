@@ -24,6 +24,15 @@ public class DensityUtils {
         return (int) (px / density  + 0.5f);
     }
 
+    public static int sp2px(Context context,float sp){
+        float scaleDensity = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int)(scaleDensity * sp + 0.5f);
+    }
+
+    public static int px2sp(Context context,float px){
+        float scaleDensity = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int)(px / scaleDensity + 0.5f);
+    }
 
     public static int deviceWidth(Context context){
         return context.getResources().getDisplayMetrics().widthPixels;
