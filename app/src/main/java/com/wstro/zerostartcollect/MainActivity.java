@@ -16,6 +16,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_demo_2).setOnClickListener(this);
         findViewById(R.id.btn_demo_3).setOnClickListener(this);
 
+        /*Thread.UncaughtExceptionHandler handler = Thread.getDefaultUncaughtExceptionHandler();
+        System.out.println(handler.getClass().getName());
+
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Thread.UncaughtExceptionHandler handler = Thread.getDefaultUncaughtExceptionHandler();
+                System.out.println(handler.getClass().getName());
+                throw new NullPointerException();
+            }
+        }).start();*/
+
     }
 
     @Override

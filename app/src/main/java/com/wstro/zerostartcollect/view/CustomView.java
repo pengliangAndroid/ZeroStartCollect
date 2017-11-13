@@ -1,6 +1,7 @@
 package com.wstro.zerostartcollect.view;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -49,4 +50,9 @@ public class CustomView extends View {
         return result;
     }
 
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+    }
 }
